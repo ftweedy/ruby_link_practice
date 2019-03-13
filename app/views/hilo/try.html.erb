@@ -1,0 +1,13 @@
+<p>
+    <%= @result %>
+    Your guesses: <%= @tries %>
+    </p>
+
+
+<form action="hilo" method="get">
+  <input type="text" name="num"  placeholder="guess"/>
+  <input type="submit" value="Submit Guess"/>
+</form>
+<form action="new_game" method="get">
+  <input type="submit" value="Reset"/>
+</form>
