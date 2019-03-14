@@ -1,7 +1,8 @@
 class MagicController < ApplicationController
     def check
-        cookies.signed[:secret_num] = rand(8)#magic result
-        @secret_num = cookies.signed[:secret_num].to_i
+        # cookies.signed[:secret_num] = rand(8)#magic result
+        # @secret_num = cookies.signed[:secret_num].to_i
+        @secret_num = rand(8) #if @secret_num.blank?
 
         if (@secret_num == 0)
             @result = "No way"

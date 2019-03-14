@@ -1,9 +1,10 @@
 <p>
     <%= @result %>
 </p>
-
-
 <form action="magic" method="get">
   <input type="text" name="question"  placeholder="guess"/>
   <input type="submit" value="Submit Guess"/>
 </form>
+<br/>
+<br/>
+<%= link_to "Back to Home Page", root_path %>

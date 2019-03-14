@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get '/choiceb' => 'adventure#choiceb'
   get '/choicec' => 'adventure#choicec'
   get '/choiced' => 'adventure#choiced'
-
+  
   root to: 'main#start'
 end

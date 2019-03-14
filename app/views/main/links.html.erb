@@ -1,5 +1,18 @@
-<%= link_to "Magic Eight Ball", magic_path %>
-<br/>
-<%= link_to "HiLo Game", hilo_path %>
-<br/>
-<%= link_to "Choose Your Adventure Game", adventure_path %>
+<table style="border: 2px solid black; border-collapse: collapse">
+    <tbody>
+        <tr>
+            <td style="border: 2px solid black">
+                <%# <%= link_to "Magic Eight Ball", magic_path %>
+                <%= link_to image_tag("EightBall.jpeg"), magic_path%>
+            </td>
+            <td style="border: 2px solid black; padding: 5px">
+                <%# <%= link_to "HiLo Game", hilo_path %>
+                <%= link_to image_tag("hilo.png"), hilo_path%>
+            </td>
+            <td style="border: 2px solid black; padding: 2px, width: 10px">
+                <%# <%= link_to "Choose Your Adventure Game", adventure_path %>
+                <%= link_to image_tag("Adventure.jpg", width:395), adventure_path%>
+            </td>
+        </tr>
+    </tbody>
+</table>
